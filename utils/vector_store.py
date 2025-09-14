@@ -1,5 +1,6 @@
 import os
 import pysqlite3
+import sys
 sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
 import chromadb
 from typing import List, Optional
@@ -90,3 +91,4 @@ class VectorStore:
         except Exception as e:
 
             return {"status": f"Error: {str(e)}", "count": 0}
+
