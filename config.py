@@ -7,7 +7,7 @@ load_dotenv()
 
 class Config:
     # Google AI API Key
-    GOOGLE_API_KEY = st.secrets[GOOGLE_API_KEY]
+    GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
     
     # Gemini Model Configuration
     GEMINI_MODEL = "gemini-1.5-flash"
@@ -26,5 +26,6 @@ class Config:
     PAGE_TITLE = "RAG Q&A System"
 
     PAGE_ICON = "🤖"
+
 
 
