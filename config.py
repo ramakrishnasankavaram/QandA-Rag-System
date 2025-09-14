@@ -1,5 +1,6 @@
 import os
 from dotenv import load_dotenv
+import streamlit as st
 
 # Load environment variables
 load_dotenv()
@@ -25,4 +26,5 @@ class Config:
     PAGE_TITLE = "RAG Q&A System"
 
     PAGE_ICON = "🤖"
+
 
