@@ -9,4 +9,5 @@ python-docx
 faiss-cpu
 pandas
 numpy
+pysqlite3-binary
 python-dotenv
