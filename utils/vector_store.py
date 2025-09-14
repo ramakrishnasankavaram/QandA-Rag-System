@@ -1,4 +1,6 @@
 import os
+import pysqlite3
+sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
 import chromadb
 from typing import List, Optional
 from sentence_transformers import SentenceTransformer
@@ -86,4 +88,5 @@ class VectorStore:
             count = collection.count()
             return {"status": "Collection loaded", "count": count}
         except Exception as e:
+
             return {"status": f"Error: {str(e)}", "count": 0}
