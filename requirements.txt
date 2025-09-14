@@ -1,0 +1,12 @@
+streamlit
+google-generativeai
+langchain
+langchain-google-genai
+chromadb
+sentence-transformers
+PyPDF2
+python-docx
+faiss-cpu
+pandas
+numpy
+python-dotenv
